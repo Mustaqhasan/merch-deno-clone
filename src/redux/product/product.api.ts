@@ -3,12 +3,12 @@ import axios, { AxiosResponse } from "axios";
 
 export const getProductsAPI = async () => {
   let response: AxiosResponse<Product[]> = await axios.get(
-    "http://localhost:8080/products"
+    "https://vast-jade-puffer-shoe.cyclic.app/products"
   );
   return response.data;
 };
 
 export const getProductAPI=async(id:string)=>{
-  let res:AxiosResponse<Product[]>=await axios.get(`http://localhost:8080/products/${id}`)
+  let res:AxiosResponse<Product[]>=await axios.get(`https://vast-jade-puffer-shoe.cyclic.app/${id}`)
   return res.data
 }
